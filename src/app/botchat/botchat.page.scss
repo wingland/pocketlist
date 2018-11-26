@@ -1,0 +1,14 @@
+ion-title {
+  text-align: center;
+}
+ion-item {
+  border: 0px;
+  --inner-border-width: 0;
+}
+.robo-chat .chat-content {
+  background: #eae8ed;
+  color: black;
+  padding: 0.8rem 1.2rem;
+  border-radius: 25px;
+  border-bottom: 0px;
+}

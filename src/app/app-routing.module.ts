@@ -4,8 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'chat',
     pathMatch: 'full'
+  },
+  {
+    path: 'chat',
+    loadChildren: './botchat/botchat.module#BotchatPageModule'
   },
   {
     path: 'home',
@@ -14,7 +18,8 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'botchat', loadChildren: './botchat/botchat.module#BotchatPageModule' }
 ];
 
 @NgModule({
